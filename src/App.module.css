@@ -1,0 +1,134 @@
+.wrapper {
+  max-width: 46rem;
+  margin: 0 auto;
+}
+
+.header {
+  height: 200px;
+  background: var(--gray-700);
+
+  display: flex;
+  align-items: start;
+  justify-content: center;
+}
+
+.header > img {
+  max-width: 126px;
+  margin-top: 72px;
+}
+
+.taskForm {
+  display: flex;
+  justify-content: center;
+  margin-top: -1.6875rem;
+}
+
+.taskForm > input {
+  width: 100%;
+  height: 3.375rem;
+  padding: 1rem;
+  border: 1px solid var(--gray-700);
+  border-radius: 8px;
+  background: var(--gray-500);
+  color: var(--gray-100);
+  line-height: 1.4rem;
+}
+
+.taskForm > input::placeholder {
+  color: var(--gray-300);
+}
+
+.taskForm button[type="submit"] {
+  padding: 1rem;
+  font-weight: bold;
+  font-size: 0.875rem;
+  color: var(--gray-100);
+  background: var(--blue-600);
+  border: 0;
+  border-radius: 8px;
+  margin-left: 0.5rem;
+  line-height: 0;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+
+  transition: background-color 0.1s;
+}
+
+.taskForm button[type="submit"]:hover {
+  background: var(--blue-500);
+}
+
+.taskInfo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 4rem;
+}
+
+.taskInfoCreated,
+.taskInfoDone {
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  gap: 8px;
+}
+
+.taskInfoCreated p,
+.taskInfoDone p {
+  font-size: 0.875rem;
+  font-weight: bold;
+  color: var(--gray-100);
+}
+
+.taskInfoCreated p {
+  color: var(--blue-500);
+}
+
+.taskInfoDone p {
+  color: var(--purple-500);
+}
+
+.taskInfoCreated span,
+.taskInfoDone span {
+  color: var(--gray-200);
+  font-size: 0.75rem;
+  font-weight: bold;
+  background: var(--gray-400);
+  border-radius: 999px;
+  padding: 0.125rem 0.5rem;
+}
+
+.taskEmpty {
+    text-align: center;
+    border-top: 1px solid var(--gray-400);
+    margin-top: 1.5rem;
+    padding: 4rem 1.5rem;
+}
+
+.taskEmpty > img {
+  width: 56px;
+  height: 56px;
+  margin-bottom: 1rem;
+}
+
+.taskEmpty p {
+  line-height: 1.4rem;
+}
+
+.taskEmpty p:first-of-type {
+  font-weight: bold;
+}
+
+.taskList {
+  margin-top: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    padding: 0 1.5rem;
+  }
+}

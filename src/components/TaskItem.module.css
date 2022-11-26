@@ -1,0 +1,61 @@
+.taskItem {
+  padding: 1rem;
+  background: var(--gray-500);
+  border-radius: 8px;
+  border: 1px solid var(--gray-400);
+
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.taskItem + li {
+  margin-top: 0.75rem;
+}
+
+.taskItem p {
+  color: var(--gray-100);
+  font-size: 0.875rem;
+  line-height: 140%;
+
+  transition: color 0.2s;
+}
+
+.taskItemDone p {
+  text-decoration: line-through;
+  color: var(--gray-300);
+}
+
+.taskCheck,
+.taskDelete {
+  align-self: flex-start;
+  border: 0;
+  border-radius: 4px;
+  background: transparent;
+  line-height: 0;
+  cursor: pointer;
+}
+
+.taskCheck {
+  color: var(--blue-500);
+}
+
+.taskDelete {
+  color: var(--gray-300);
+  padding: 4px;
+  margin: -4px -4px 0 0;
+  margin-left: auto;
+}
+
+.taskDelete:hover {
+  background: var(--gray-400);
+  color: var(--red-500);
+}
+
+.taskItemDone .taskCheck {
+  color: var(--purple-500);
+}
+
+.taskItemDone .taskCheck svg polyline {
+  color: var(--white);
+}
